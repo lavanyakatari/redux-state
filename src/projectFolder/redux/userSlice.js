@@ -3,16 +3,16 @@ import { createSlice } from "@reduxjs/toolkit";
 export const userSlice = createSlice({
     name:'newSubscriber',
     initialState:{
-        comments:[]
+        users:[]
     },
 
     reducers:{
         addUsers:(state,action) => {
-           state.comments.push(action.payload)
+           state.users.push(action.payload)
 
         }
     }
 })
 
-export const {addUsers} = userSlice.reducer
+export const {addUsers} = userSlice.actions
 export default userSlice.reducer
