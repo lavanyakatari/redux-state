@@ -6,16 +6,17 @@ export const NavBar = () => {
     const updatedUsers = useSelector((state) => state.newSubscriber.users)
     return(
         <>
-        <div>
-        Likes:{updatedLikes}
+        <div className="bg-blue-400 text-white py-7 shadow-lg">
+        <div className="flex flex-row justify-between items-center px-4">
+
+        <div className="text-lg"> Likes: <span >{updatedLikes}</span></div>
+        <div className="text-lg"> Subscribers: <span>{updatedUsers.length}</span></div>
+        <div className="text-lg"> Comments: <span>{updatedComments.length}</span></div>
         </div>
-        <div>
-            Subcribers:{updatedUsers.length}
-        </div>
-        <div>
-            Comments:{updatedComments.length}
         </div>
 
+       
+       
         </>
       
     )

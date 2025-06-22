@@ -9,7 +9,10 @@ function App() {
     <>
       <div>
         <NavBar/>
-        <img src={kashmir}/>
+        <div className="flex justifiy-center py-5 px-60">
+          <img className="" src={kashmir}/>
+        </div>
+        
         <div>
           <PostDisplay/>
         </div>
